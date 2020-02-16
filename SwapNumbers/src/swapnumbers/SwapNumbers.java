@@ -31,6 +31,8 @@ public class SwapNumbers {
         b = a;
         
         a = temp;
+        
+        // For the easier method
         */
         
         a = a+b;
