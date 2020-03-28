@@ -6,6 +6,11 @@
 package simplecalculator;
 
 import java.util.Scanner;
+import simplecalculator.Math;
+import static simplecalculator.Math.add;
+import static simplecalculator.Math.divide;
+import static simplecalculator.Math.multiply;
+import static simplecalculator.Math.subtract;
 
 /**
  *
@@ -46,21 +51,6 @@ public class SimpleCalculator {
         
     }
     
-    public static double add(double a, double b){
-        return a + b;
-        
-    }
-    
-    public static double subtract(double a, double b){
-        return a - b;
-    }
-    
-    public static double multiply(double a, double b){
-        return a * b;
-    }
-    
-    public static double divide(double a, double b){
-        return a / b;
-    }
+
     
 }
