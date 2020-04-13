@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class NumberDayName {
 
     /**
-     * @param args the command line arguments
+     * // returns the day name *ONLY 2020*
      */
     public static void main(String[] args) {
 
