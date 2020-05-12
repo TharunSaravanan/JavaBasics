@@ -19,28 +19,25 @@ public class GradeCalculator {
     public static void main(String[] args) {
         
         Scanner in = new Scanner(System.in);
-
+        
         System.out.println("Enter number grade");
-        double number = in.nextDouble();
         
-        // compute grade
-        String grade = "";
-        if (number >= 90)
-            grade = "A";
-        else if (number >= 80)
-            grade = "B";
-        else if (number >= 70)
-            grade = "C";
-        else if (number >= 60)
-            grade = "D";
-        else 
-            grade = "F";
+        double score = in.nextDouble();
         
-        // print mark
-       System.out.println("Your mark is " + number);
-       
-       // print grade
-       System.out.println("Your grade is " + grade);
+        double[] gradeNumbers = new double[]{60, 70, 80, 90, 100};
+        
+        String[] gradeLetters = new String[]{"F", "D", "C", "B", "A",};
+        
+        for(int i = 0; i < gradeNumbers.length; i++){
+            
+            if(score <= gradeNumbers[i]){
+                
+                System.out.println("Grade = "+ gradeLetters[i]);
+                
+                break;
+            }
+            
+        }
     }
     
 }
